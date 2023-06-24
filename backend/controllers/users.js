@@ -1,3 +1,4 @@
+const { SALT_ROUNDS = 10 } = process.env;
 const bcrypt = require('bcryptjs');
 const userModel = require('../models/user');
 const STATUS_CODES = require('../utils/costants');
@@ -5,8 +6,6 @@ const UnauthorizedError = require('../errors/Unauthorized_Error');
 const ConflictingRequestError = require('../errors/Conflicting_Request_Error');
 const NotFoundError = require('../errors/Not_Found_Error');
 const { signToken } = require('../utils/jwtAuth');
-
-const SALT_ROUNDS = 10;
 
 // вернуть всех пользователей
 const getUsers = (req, res, next) => {

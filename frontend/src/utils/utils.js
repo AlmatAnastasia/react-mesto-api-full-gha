@@ -1,5 +1,6 @@
 export const dataApi = {
-  baseUrl: "http://localhost:3000", // адрес сервера
+  // baseUrl: "http://localhost:3000", // адрес сервера
+  baseUrl: "https://almatanastasia.nomoredomains.rocks", // адрес сервера
   headers: {
     "Content-Type": "application/json",
   },
