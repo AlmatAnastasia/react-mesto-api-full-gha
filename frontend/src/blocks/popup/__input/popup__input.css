@@ -1,0 +1,25 @@
+.popup__input {
+  margin: 30px 36px 0 36px;
+  padding: 0 0 8px 0; /* padding-bottom: 13px; */
+  width: calc(100% - 2 * 36px);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__input {
+    margin: 30px 22px 0 22px;
+    padding: 0 0 10px 0; /* padding-bottom: 13px; */
+    width: calc(100% - 2 * 22px);
+  }
+}
+
+.popup__input::placeholder {
+  color: #000000;
+}
+
+.popup__input:focus {
+  outline: 3px solid #9932cc;
+  border-radius: 1%;
+}

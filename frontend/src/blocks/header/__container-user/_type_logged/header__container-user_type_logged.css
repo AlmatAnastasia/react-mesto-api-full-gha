@@ -1,0 +1,18 @@
+.header__container-user_type_logged {
+  margin-top: 5px;
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .header__container-user_type_logged {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}

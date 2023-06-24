@@ -1,0 +1,5 @@
+.card__item-like-container {
+  margin-left: auto;
+  display: grid;
+  row-gap: 3px;
+}

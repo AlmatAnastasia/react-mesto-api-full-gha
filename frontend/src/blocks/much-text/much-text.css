@@ -1,0 +1,6 @@
+.much-text {
+  /* переполнение блока с появляющимся многоточием в конце */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

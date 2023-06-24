@@ -1,0 +1,8 @@
+.form__button-submit_disabled {
+  border: 1px solid #c5c5c5;
+}
+
+.form__button-submit_disabled:hover {
+  color: #c5c5c5;
+  background-color: inherit;
+}

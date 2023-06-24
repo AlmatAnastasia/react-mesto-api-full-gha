@@ -1,0 +1,22 @@
+.profile__intro-title {
+  margin: 0;
+  max-width: 294px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.625rem;
+  line-height: 1.143;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px) {
+  .profile__intro-title {
+    font-size: calc((100vw - 320px) / (1280 - 320) * (42 - 27) + 27px);
+    line-height: calc((100vw - 320px) / (1280 - 320) * (48 - 32.68) + 32.68px);
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .profile__intro-title {
+    max-width: 189px;
+    padding-left: 28px;
+  }
+}

@@ -1,0 +1,14 @@
+.header__app-login-button_type_logged {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .header__app-login-button_type_logged {
+    margin-top: 10px;
+    margin-right: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.22;
+  }
+}

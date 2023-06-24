@@ -1,0 +1,9 @@
+.popup__submit_disabled {
+  color: #c5c5c5;
+  background-color: #ffffff;
+  border: 1px solid #c5c5c5;
+}
+
+.popup__submit_disabled:hover {
+  background-color: inherit;
+}

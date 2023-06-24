@@ -1,0 +1,7 @@
+@media screen and (max-width: 375px) {
+  .header__logo_type_logged {
+    padding-top: 22px;
+    padding-left: 30px;
+    max-width: 103.74px;
+  }
+}

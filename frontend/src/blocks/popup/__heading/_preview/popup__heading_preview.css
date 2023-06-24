@@ -1,0 +1,11 @@
+.popup__heading_preview {
+  margin: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: #ffffff;
+}

@@ -1,0 +1,11 @@
+.login__signin {
+  height: 112px;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 375px) {
+  .login__signin {
+    height: 77px;
+    background-color: #000000;
+  }
+}

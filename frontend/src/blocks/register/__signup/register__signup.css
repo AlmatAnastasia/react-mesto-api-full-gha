@@ -1,0 +1,19 @@
+.register__signup {
+  margin: 0 auto 67px auto;
+  min-width: 358px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.214;
+}
+
+@media screen and (max-width: 375px) {
+  .register__signup {
+    margin: 6px auto 26px auto;
+    min-width: 260px;
+  }
+}

@@ -1,0 +1,14 @@
+.form {
+  margin: 60px auto 0 auto;
+  max-width: 358px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 376px) {
+  .form {
+    margin: 40px auto 0 auto;
+    max-width: 260px;
+  }
+}

@@ -1,0 +1,21 @@
+.header__app-login-button {
+  padding: 0;
+  height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.22;
+  color: #ffffff;
+  background-color: initial;
+  border: none;
+}
+
+@media screen and (max-width: 375px) {
+  .header__app-login-button {
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.214;
+  }
+}

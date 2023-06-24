@@ -1,0 +1,14 @@
+.form__input {
+  padding: 0;
+  padding-bottom: 9px;
+  min-width: 100%;
+  min-height: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.2143;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}

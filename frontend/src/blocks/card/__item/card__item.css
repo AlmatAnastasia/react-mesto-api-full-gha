@@ -1,0 +1,6 @@
+.card__item {
+  margin: 19px 15px 19px 21px; /* margin: 25px 15px 31px 21px; */
+  width: calc(100% - 36px);
+  display: flex;
+  align-items: center;
+}

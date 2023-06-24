@@ -1,0 +1,10 @@
+.profile__intro_type_logged {
+  margin-left: 30px;
+  row-gap: 6px;
+}
+
+@media screen and (max-width: 375px) {
+  .profile__intro_type_logged {
+    margin-left: 0;
+  }
+}

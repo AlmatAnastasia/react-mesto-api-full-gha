@@ -1,0 +1,25 @@
+/** Родительский блок page **/
+
+.page {
+  margin: 0 auto;
+  padding: 0 calc((100vw - 1280px) / 2);
+  max-width: 880px;
+  color: #ffffff;
+  /* сглаживание шрифтов в Firefox и браузерах на движке Webkit */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* правила для масштабирования шрифтов */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  /* рендеринг:«оптимизировать читаемость» */
+  text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px) {
+  .page {
+    max-width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+  }
+}
