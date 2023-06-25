@@ -8,6 +8,11 @@ const {
 const { validatorSignIn, validatorSignUp } = require('../middlewares/validate');
 const auth = require('../middlewares/auth');
 
+router.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 // регистрация пользователя
 router.post('/signup', validatorSignUp, postUser);
 // авторизация пользователя
