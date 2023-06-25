@@ -1,4 +1,5 @@
 const cardModel = require('../models/card');
+const BadRequestError = require('../errors/Bad_Request_Error');
 const ForbiddenError = require('../errors/Forbidden_Error');
 const NotFoundError = require('../errors/Not_Found_Error');
 
@@ -26,11 +27,15 @@ const deleteCardByID = (req, res, next) => {
       if (ownerCard !== owner) {
         throw new ForbiddenError('Нельзя удалить чужую карточку');
       }
-      cardModel
-        .findByIdAndRemove(req.params.cardId)
-        .then(() => res.send(card));
+      cardModel.findByIdAndRemove(req.params.cardId).then(() => res.send(card));
     })
-    .catch(next);
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        next(new BadRequestError('Переданы некорректные данные'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 // создать карточку
@@ -40,7 +45,13 @@ const postCard = (req, res, next) => {
   cardModel
     .create({ name, link, owner })
     .then((card) => res.send(card))
-    .catch(next);
+    .catch((err) => {
+      if (err.name === 'ValidationError') {
+        next(new BadRequestError('Переданы некорректные данные'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 // поставить лайк карточке
@@ -59,7 +70,13 @@ const putCardLike = (req, res, next) => {
       }
       return res.send(card);
     })
-    .catch(next);
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        next(new BadRequestError('Переданы некорректные данные'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 // убрать лайк с карточки
@@ -78,7 +95,13 @@ const deleteCardLike = (req, res, next) => {
       }
       return res.send(card);
     })
-    .catch(next);
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        next(new BadRequestError('Переданы некорректные данные'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 module.exports = {

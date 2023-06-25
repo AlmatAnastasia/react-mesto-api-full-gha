@@ -1,7 +1,7 @@
 const { celebrate, Joi } = require('celebrate');
 
 // регулярное выражение для проверки ссылки (данных поля avatar)
-const regex = /^(http|https):\/\/(www.)?[0-9a-z -._~:[\]/?#[\]@!$&'()*+,;=]{1,10}\.ru(\/[a-z/]*)?(#)?/i;
+const regex = /^(http|https):\/\/(www.)?[0-9a-z -._~:[\]/?#[\]@!$&'()*+,;=]{1,}(\/[a-z/]*)?(#)?/i;
 
 // регистрация пользователя
 const validatorSignUp = celebrate({
