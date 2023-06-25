@@ -27,9 +27,9 @@
 <h2>Ссылки на проект</h2>
 <p>
 Адрес репозитория: https://github.com/AlmatAnastasia/react-mesto-api-full-gha<br>
-Публичный IP-адрес сервера: 158.160.63.218<br>
-Frontend: https://almatanastasia.nomoreparties.sbs<br>
-Backend: https://almatanastasia.nomoredomains.rocks
+IP 158.160.63.218<br>
+Frontend https://almatanastasia.nomoreparties.sbs<br>
+Backend https://almatanastasia.nomoredomains.rocks
 </p>
 
 <div id="demo"></div>
